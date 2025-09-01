@@ -98,11 +98,11 @@ from 100 to 200 in steps of 10.
 
 4. Advanced Slicing with Negative Steps
 
-`letters[::-1]`, which reverse the list.
+`letters[::-1]`, which reverse *letters*.
 
 ## Array
-Compared with *list*, the main difference is that `arrays require all elements to be of
-the same data type`, unlike List which can contain mixed types.
+Compared to *list*, the main difference is that `Array require all elements to be of
+the same data type`, unlike *List* which can contain mixed types.
 
 ```bash
 import numpy as np
@@ -127,7 +127,7 @@ of *array*. If we modify elements in *array_b*, the corresponding elements in *a
 also change.`
 
 ## Tuple
-*Tuples* are immutable sequences of values. They are similar to *List* but `cannot be changed
+*Tuple* are immutable sequences of values. They are similar to *List* but `cannot be changed
  after creation`. Their contents remain constant throughout their lifetime.
 
 ```bash
@@ -135,34 +135,34 @@ tuple= ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j')
 ```
 You can access elements of a *tuple* using indices just like a list.
 
-The immutability of tuples is useful when you want to ensure that data passed to functions
+The immutability of Tuple is useful when you want to ensure that data passed to functions
  or shared between objects remains constant and unmodified.
 
-### Mixed Types in Tuples
+### Mixed Types in Tuple
 ```bash
 tuple = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 1)
 ```
 
-## Sets
-Sets, are mutable, unordered sequences of *unique elements*. In fact, a set is a lot like a mathematical set because it doesn’t hold duplicate values.
+## Set
+The *Set*, are mutable, unordered sequences of *unique elements*. In fact, a Set is a lot like a mathematical Set because it doesn’t hold duplicate values.
 
 ```bash
 set = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'}
 ```
 
-## Dictionaries
-A dictionary in Python holds `key-value` pairs, but you’re not allowed to use an unhashable item
-as a key. The primary difference between a dictionary and a set is the fact that it holds *key-value* pairs instead of single values.
+## Dictionary
+A Dictionary in Python holds `key-value` pairs, but you’re not allowed to use an unhashable item
+as a key. The primary difference between a Dictionary and a Set is the fact that it holds *key-value* pairs instead of single values.
 
 ```bash
 dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10}
 ```
-### Mixed Types in Tuples
+### Mixed Types in Dictionary
 
 ```bash
 dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'l': true}
 ```
-Dictionaries can store values of different types, just like List in Python.
+Dictionary can store values of different types, just like List in Python.
 
 
 ## Reference
