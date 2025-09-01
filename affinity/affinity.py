@@ -8,7 +8,7 @@ invalid_rules = defaultdict(int)
 dataset = "dataset.txt"
 datas = np.loadtxt(dataset)
 
-goods = ["Bread", "Milk", "Butter", "Apple", "Banana"]
+goods = ("Bread", "Milk", "Butter", "Apple", "Banana")
 
 valid_rules = defaultdict(int)
 invalid_rules = defaultdict(int)
