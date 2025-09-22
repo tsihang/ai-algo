@@ -21,7 +21,7 @@ This expression, `letters[0]`, returns the first element, which is *a*. Similarl
 len(letters)
 ```
 
-Since the list has ten elements, *len(letters)* returns *10*. However, because list indices
+Since the list has ten elements, `len(letters)` returns *10*. However, because list indices
 start at *0*, the last element's index is always *len(letters) - 1*. Therefore, to access
 the last element, you use *letters[9]*.
 
@@ -55,50 +55,50 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 ```bash
 print(letters)
 ```
-Now, if you print the list *letters*, you will see that the 3nd element has been replaced with *63*.
+Now, if you `print()` the list *letters*, you will see that the 3nd element has been replaced with *63*.
 
 ### The range() function
 
 The `range()` function is commonly used in for loops to generate a range of numbers to
-iterate over. For example, `range(15)` creates a range object representing numbers from 0
+iterate over. For example, *range(15)* creates a range object representing numbers from 0
 up to, but not including, 15.
 
 Using *range()* is convenient for generating sequences of numbers instead of typing them out manually.
-For example, you can create a list of numbers from 0 to 7 by calling `list(range(8))`.
+For example, you can create a list of numbers from 0 to 7 by calling *list(range(8))*.
 
-You can also specify a starting point other than zero. For example, `list(range(1, 8))` generates
+You can also specify a starting point other than zero. For example, *list(range(1, 8))* generates
  numbers from 1 up to, but not including, 8.
 
 The *range()* function also accepts a third parameter: the step size. By default, the step is 1,
 meaning the sequence increments by 1 each time. You can specify a different step to generate
-sequences with different intervals. For example, `list(range(100, 111, 2))` generates even
-numbers between 100 and 110 inclusive. Similarly, `list(range(100, 201, 10))` generates numbers
+sequences with different intervals. For example, *list(range(100, 111, 2))* generates even
+numbers between 100 and 110 inclusive. Similarly, *list(range(100, 201, 10))* generates numbers
 from 100 to 200 in steps of 10.
 
 ### Slicing in List
-`:`
+
 1. Slicing with Start and Stop Indices
 
-`letters[:]`, full slicing, which returns the entire list.
+letters[`:`], full slicing, which returns the entire list.
 
-`letters[2:]`, which slice from index 2 to the end.
+letters[`2:`], which slice from index 2 to the end.
 
-`letters[:4]`, which slice from the beginning up to, but not including, index 4.
+letters[`:4`], which slice from the beginning up to, but not including, index 4.
 
-`letters[2:4]`, which extract elements from index 2 up to, but not including, index 4.
+letters[`2:4`], which extract elements from index 2 up to, but not including, index 4.
 
 2. Advanced Slicing with Steps
 
-`letters[1:5:2]`, which select every second element between indices 2 and 4.
+letters[`1:5:2`], which select every second element between indices 2 and 4.
 
-`letters[::3]`, which select every third element.
+letters[`::3`], which select every third element.
 
 3. Slicing with Negative Indices
-`letters[-8:7]` and `letters[-8:-3]` show same result using negative indices.
+letters[`-8:7`] and letters[`-8:-3`] show same result using negative indices.
 
 4. Advanced Slicing with Negative Steps
 
-`letters[::-1]`, which reverse *letters*.
+letters[`::-1`], which reverse *letters*.
 
 ## Array
 Compared to *list*, the main difference is that `Array require all elements to be of
@@ -151,7 +151,7 @@ set = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'}
 ```
 
 ## Dictionary
-A Dictionary in Python holds `key-value` pairs, but you’re not allowed to use an unhashable item
+A Dictionary in Python holds *key-value* pairs, but you’re not allowed to use an unhashable item
 as a key. The primary difference between a Dictionary and a Set is the fact that it holds *key-value* pairs instead of single values.
 
 ```bash
@@ -163,6 +163,8 @@ dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 
 dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'l': true}
 ```
 Dictionary can store values of different types, just like List in Python.
+
+## File IO
 
 
 ## Reference
